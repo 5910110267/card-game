@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className = "App">
-        Hello World
+        Hello {2+3}
       </div>
       /*<div className="App">
         <header className="App-header">

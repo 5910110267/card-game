@@ -9,11 +9,14 @@ export default class CharacterCard extends Component {
             active: false,
         }
     }
-    
+    activationHandler = c => { console.log(`${c} has been activated.`) }
+
     activate = () => {
         if(!this.state.active){
+            this.props.activationHandler(this.props.value)
             this.setState({active: true})
         }
+
     }
     
     
